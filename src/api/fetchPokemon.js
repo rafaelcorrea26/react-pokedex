@@ -6,3 +6,5 @@ const fetchPokemon = async (pokemon) => {
       return data;
     }
   }
+
+export default fetchPokemon;

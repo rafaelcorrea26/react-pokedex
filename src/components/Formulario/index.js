@@ -1,9 +1,14 @@
+import Botoes from '../Botoes';
+import CampoTexto from '../CampoTexto';
 import './Formulario.css';
 
-function Formulario() {
+function Formulario(props) {
     return (
         <form className="form">
-            <input type="search" className="input_search" placeholder="Digite o Nome ou Numero" required />
+            <div>
+                <CampoTexto />
+                <Botoes searchPokemon={props.searchPokemon} render={props.renderPokemon}/>
+            </div>
         </form>
     )
 }
